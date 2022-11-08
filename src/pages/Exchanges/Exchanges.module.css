@@ -1,0 +1,18 @@
+.headerText {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0rem;
+}
+
+.headerDescription {
+  color: var(--colors-neutral-50);
+}
+
+.loaderWrapperContainer {
+  margin: 4rem 0rem;
+}
+
+.errorWrapperContainer {
+  margin: 4rem 0rem;
+}
