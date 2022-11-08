@@ -1,3 +1,8 @@
+:root {
+  --colors-neutral: #e6e6e6;
+}
 
-
-
+.app-container {
+  margin-top: 8rem;
+  padding: 0rem 1.5rem;
+}
