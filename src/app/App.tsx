@@ -1,14 +1,33 @@
 import React from "react";
-import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import "./App.css";
 import { Header } from "components";
-import { Exchanges } from "pages";
+import { Exchanges, ExchangeDetails, NotFound } from "pages";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Exchanges />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "exchanges",
+    element: <Exchanges />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "exchanges/:exchangeId",
+    element: <ExchangeDetails />,
+    errorElement: <NotFound />,
+  },
+]);
 
 function App() {
   return (
     <div className="app-container">
       <Header />
-      <Exchanges />
+      <RouterProvider router={router} />
     </div>
   );
 }
