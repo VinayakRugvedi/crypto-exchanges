@@ -17,6 +17,7 @@
 
 .loaderText {
   color: var(--colors-neutral-50);
+  text-align: center;
 }
 
 @keyframes spinner {
