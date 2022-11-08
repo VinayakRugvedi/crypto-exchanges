@@ -1,0 +1,17 @@
+.errorContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorIcon {
+  font-size: 2.5rem;
+}
+
+.errorText {
+  color: var(--colors-neutral-50);
+  margin-top: 0rem;
+  text-align: center;
+}
