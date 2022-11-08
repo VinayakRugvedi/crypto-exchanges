@@ -3,11 +3,11 @@ import React from "react";
 import styles from "./Avatar.module.css";
 
 interface PropTypes {
-  imageUrl: string;
-  alt: string;
+  imageUrl?: string;
+  alt?: string;
 }
 
-const Avatar = ({ imageUrl, alt }: PropTypes): JSX.Element => {
+const Avatar = ({ imageUrl, alt = "avatar" }: PropTypes): JSX.Element => {
   return <img className={styles.avatar} src={imageUrl} alt={alt} />;
 };
 
