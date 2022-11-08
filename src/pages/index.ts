@@ -1,3 +1,5 @@
 import Exchanges from "./Exchanges";
+import ExchangeDetails from "./ExchangeDetails";
+import NotFound from "./NotFound";
 
-export { Exchanges };
+export { Exchanges, ExchangeDetails, NotFound };
