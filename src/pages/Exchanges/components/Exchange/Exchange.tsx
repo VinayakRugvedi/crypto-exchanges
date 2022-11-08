@@ -1,20 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { Avatar } from "components";
 import styles from "./Exchange.module.css";
 
 interface PropTypes {
-  name: string;
-  country: string;
-  url: string;
-  imageUrl: string;
-  trustScore: number;
-  trustRank: number;
-  yearEstablished: number;
+  id: string;
+  name?: string;
+  country?: string;
+  url?: string;
+  imageUrl?: string;
+  trustScore?: number;
+  trustRank?: number;
+  yearEstablished?: number;
 }
 
 const Exchange = ({
+  id,
   name,
   country,
   url,
@@ -50,9 +53,9 @@ const Exchange = ({
             <FaExternalLinkAlt />
           </span>
         </a>
-        <a href={url} target="_blank" className={styles.link} rel="noreferrer">
+        <Link to={`/exchanges/${id}`} state="hello" className={styles.link}>
           More Details
-        </a>
+        </Link>
       </div>
     </div>
   );
