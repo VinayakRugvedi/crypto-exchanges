@@ -1,0 +1,19 @@
+.rootHeaderContainer {
+  padding: 0rem 1.5rem;
+  border-bottom: 1px solid var(--colors-neutral);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.headerText {
+  margin: 0;
+}
