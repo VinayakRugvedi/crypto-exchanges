@@ -5,13 +5,13 @@ import Exchanges from "./Exchanges";
 
 export interface ExchangeType {
   id: string;
-  name: string;
-  country: string;
-  url: string;
-  image: string;
-  trust_score_rank: number;
-  trust_score: number;
-  year_established: number;
+  name?: string;
+  country?: string;
+  url?: string;
+  image?: string;
+  trust_score_rank?: number;
+  trust_score?: number;
+  year_established?: number;
 }
 
 const ExchangesContainer = (): JSX.Element => {

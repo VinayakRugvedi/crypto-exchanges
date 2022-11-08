@@ -16,15 +16,11 @@ const Exchanges = ({
   isError,
   exchanges,
 }: PropTypes): JSX.Element => {
-  let mainContent: null | JSX.Element = null;
-
-  if (isLoading) {
-    mainContent = (
-      <div className={styles.loaderWrapperContainer}>
-        <Loader />
-      </div>
-    );
-  }
+  let mainContent: JSX.Element = (
+    <div className={styles.loaderWrapperContainer}>
+      <Loader />
+    </div>
+  );
 
   if (isError) {
     mainContent = (
@@ -37,10 +33,10 @@ const Exchanges = ({
   if (!isLoading && !isError) {
     const exchangesContent: Array<JSX.Element> = [];
     exchanges.map((exchange) => {
-      console.log(exchange, "EXCAH");
       exchangesContent.push(
         <div key={exchange.id}>
           <Exchange
+            id={exchange.id}
             name={exchange.name}
             country={exchange.country}
             url={exchange.url}
