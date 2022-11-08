@@ -1,0 +1,62 @@
+.exchangeDetailsContainer {
+  border: 1px solid var(--colors-neutral);
+  padding: 1rem;
+  position: relative;
+}
+
+.subHeaderContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatarContainer {
+  margin-right: 1rem;
+}
+
+.subHeaderText {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0rem;
+}
+
+.subHeaderDescription {
+  margin: 0rem;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--colors-neutral-50);
+}
+
+.trustContainer {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--colors-neutral-50);
+  font-weight: 400;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--colors-neutral);
+  color: var(--colors-neutral-50);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  cursor: pointer;
+  border: 2px solid var(--colors-primary);
+  background-color: var(--colors-primary);
+  color: var(--colors-neutral-80);
+  transition: all 0.5s;
+}
