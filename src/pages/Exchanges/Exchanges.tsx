@@ -1,12 +1,14 @@
 import React from "react";
 
 import { Loader, Error } from "components";
+import Exchange from "./components/Exchange";
+import { ExchangeType } from "./Exchanges.container";
 import styles from "./Exchanges.module.css";
 
 interface PropTypes {
   isLoading: boolean;
   isError: boolean;
-  exchanges: Array<object>;
+  exchanges: Array<ExchangeType>;
 }
 
 const Exchanges = ({
@@ -33,7 +35,27 @@ const Exchanges = ({
   }
 
   if (!isLoading && !isError) {
-    // add exchange meta details to mainContent
+    const exchangesContent: Array<JSX.Element> = [];
+    exchanges.map((exchange) => {
+      console.log(exchange, "EXCAH");
+      exchangesContent.push(
+        <div key={exchange.id}>
+          <Exchange
+            name={exchange.name}
+            country={exchange.country}
+            url={exchange.url}
+            imageUrl={exchange.image}
+            trustScore={exchange.trust_score}
+            trustRank={exchange.trust_score_rank}
+            yearEstablished={exchange.year_established}
+          />
+        </div>,
+      );
+    });
+
+    mainContent = (
+      <div className={styles.exchangesWrapperContainer}>{exchangesContent}</div>
+    );
   }
 
   return (
