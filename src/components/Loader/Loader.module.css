@@ -1,0 +1,29 @@
+.loaderContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 0.7rem solid var(--colors-neutral);
+  border-top: 0.7rem solid var(--colors-neutral-80);
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.loaderText {
+  color: var(--colors-neutral-50);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
