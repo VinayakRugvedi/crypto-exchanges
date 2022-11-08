@@ -59,8 +59,8 @@ const Exchanges = ({
   }
 
   return (
-    <div className="exchanges-container">
-      <header className="header-container">
+    <div>
+      <header>
         <h2 className={styles.headerText}>Cryptocurrency Exchanges</h2>
         <p className={styles.headerDescription}>
           You are viewing the directory of the first 10 cryptocurrency exchanges
