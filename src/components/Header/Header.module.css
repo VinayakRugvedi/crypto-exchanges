@@ -1,10 +1,12 @@
 .rootHeaderContainer {
   padding: 0rem 1.5rem;
   border-bottom: 1px solid var(--colors-neutral);
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 99;
   display: flex;
   align-items: center;
 }
