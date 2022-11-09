@@ -60,7 +60,12 @@ const ExchangeDetails = ({
           />
         </section>
         <section className={styles.sectionContainer}>
-          <h3 className={styles.descriptionHeaderText}>Description</h3>
+          <h3
+            className={styles.descriptionHeaderText}
+            data-cy="description-header-text"
+          >
+            Description
+          </h3>
           <p className={styles.descriptionContent}>
             {exchange.description ? exchange.description : "N/A"}
           </p>

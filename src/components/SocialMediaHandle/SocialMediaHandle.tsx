@@ -24,6 +24,7 @@ const SocialMediaHandle = ({ url, type }: PropTypes): JSX.Element => {
       target="_blank"
       className={`${styles.link} ${styles[type]}`}
       rel="noreferrer"
+      data-cy="social-media-link"
     >
       <SocialIcon />
     </a>

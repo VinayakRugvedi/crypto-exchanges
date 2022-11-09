@@ -68,7 +68,12 @@ const SocialMedia = ({
   if (socialMediaHandlesContent.length === 0) return null;
 
   return (
-    <div className={styles.handlesContainer}>{socialMediaHandlesContent}</div>
+    <div
+      className={styles.handlesContainer}
+      data-cy="social-media-handles-holder"
+    >
+      {socialMediaHandlesContent}
+    </div>
   );
 };
 

@@ -31,7 +31,9 @@ const Header = ({
           <Avatar imageUrl={imageUrl} alt={name} size={SizeTypes.Medium} />
         </div>
         <div>
-          <h4 className={styles.name}>{name}</h4>
+          <h4 className={styles.name} data-cy="exchange-name">
+            {name}
+          </h4>
           <a
             href={url}
             target="_blank"

@@ -14,7 +14,7 @@ const BackLink = ({
   link = "/",
 }: PropTypes): JSX.Element => {
   return (
-    <Link className={styles.backLink} to={link}>
+    <Link className={styles.backLink} to={link} data-cy="back-link">
       <span className={styles.backIcon}>
         <FaLongArrowAltLeft />
       </span>
