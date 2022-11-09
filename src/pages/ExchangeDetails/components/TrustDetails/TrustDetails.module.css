@@ -1,0 +1,29 @@
+.trustDetailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trustBlock {
+  padding: 0.6rem 3rem;
+  padding-left: 1rem;
+  border: 1px solid var(--colors-neutral);
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.trustHeaderText,
+.trustValue {
+  margin: 0rem;
+}
+
+.trustHeaderText {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--colors-secondary);
+}
+
+.trustValue {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}

@@ -3,6 +3,7 @@ import React from "react";
 import { Loader, Error } from "components";
 import { ExchangeType } from "./ExchangeDetails.container";
 import Header from "./components/Header";
+import TrustDetails from "./components/TrustDetails";
 import styles from "./ExchangeDetails.module.css";
 
 interface PropTypes {
@@ -42,9 +43,14 @@ const ExchangeDetails = ({
         yearEstablished={exchange.year_established}
       />
       <main>
-        <section>trust details</section>
-        <section>Social Media</section>
-        <section className={styles.descriptionSectionContainer}>
+        <section className={styles.sectionContainer}>
+          <TrustDetails
+            trustRank={exchange.trust_score_rank}
+            trustScore={exchange.trust_score}
+          />
+        </section>
+        <section className={styles.sectionContainer}>Social Media</section>
+        <section className={styles.sectionContainer}>
           <h3 className={styles.descriptionHeaderText}>Description</h3>
           <p className={styles.descriptionContent}>
             {exchange.description ? exchange.description : "N/A"}
