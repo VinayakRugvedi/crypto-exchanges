@@ -1,5 +1,9 @@
 :root {
   --colors-neutral: #e6e6e6;
+  --colors-neutral-50: #666666;
+  --colors-neutral-80: #383636;
+  --colors-primary: #c4fa00;
+  --colors-primary-80: #b4e600;
 }
 
 .app-container {
