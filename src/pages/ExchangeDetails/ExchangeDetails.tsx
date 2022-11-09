@@ -4,6 +4,7 @@ import { Loader, Error } from "components";
 import { ExchangeType } from "./ExchangeDetails.container";
 import Header from "./components/Header";
 import TrustDetails from "./components/TrustDetails";
+import SocialMedia from "./components/SocialMedia";
 import styles from "./ExchangeDetails.module.css";
 
 interface PropTypes {
@@ -49,7 +50,15 @@ const ExchangeDetails = ({
             trustScore={exchange.trust_score}
           />
         </section>
-        <section className={styles.sectionContainer}>Social Media</section>
+        <section className={styles.sectionContainer}>
+          <SocialMedia
+            facebookUrl={exchange.facebook_url}
+            slackUrl={exchange.slack_url}
+            telegramUrl={exchange.telegram_url}
+            redditUrl={exchange.reddit_url}
+            twitterHandle={exchange.twitter_handle}
+          />
+        </section>
         <section className={styles.sectionContainer}>
           <h3 className={styles.descriptionHeaderText}>Description</h3>
           <p className={styles.descriptionContent}>

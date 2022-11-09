@@ -16,6 +16,7 @@ export interface ExchangeType {
   facebook_url: string;
   slack_url: string;
   telegram_url: string;
+  reddit_url: string;
   twitter_handle: string;
 }
 
