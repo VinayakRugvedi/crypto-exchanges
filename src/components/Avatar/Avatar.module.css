@@ -3,3 +3,9 @@
   height: 3rem;
   border-radius: 10px;
 }
+
+.medium {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 15px;
+}
