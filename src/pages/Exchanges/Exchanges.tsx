@@ -34,7 +34,7 @@ const Exchanges = ({
     const exchangesContent: Array<JSX.Element> = [];
     exchanges.map((exchange) => {
       exchangesContent.push(
-        <div key={exchange.id}>
+        <div key={exchange.id} data-cy="exchange-component-holder">
           <Exchange
             id={exchange.id}
             name={exchange.name}
@@ -50,14 +50,21 @@ const Exchanges = ({
     });
 
     mainContent = (
-      <div className={styles.exchangesWrapperContainer}>{exchangesContent}</div>
+      <div
+        className={styles.exchangesWrapperContainer}
+        data-cy="exchanges-holder"
+      >
+        {exchangesContent}
+      </div>
     );
   }
 
   return (
     <div>
       <header>
-        <h2 className={styles.headerText}>Cryptocurrency Exchanges</h2>
+        <h2 className={styles.headerText} data-cy="page-title-text">
+          Cryptocurrency Exchanges
+        </h2>
         <p className={styles.headerDescription}>
           You are viewing the directory of the first 10 cryptocurrency exchanges
         </p>

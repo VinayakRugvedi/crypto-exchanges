@@ -33,7 +33,9 @@ const Exchange = ({
           <Avatar imageUrl={imageUrl} alt={name} />
         </div>
         <div className={styles.subHeaderDetails}>
-          <h4 className={styles.subHeaderText}>{name}</h4>
+          <h4 className={styles.subHeaderText} data-cy="exchange-name">
+            {name}
+          </h4>
           <p className={styles.subHeaderDescription}>
             Est. {yearEstablished}&nbsp;
             {country ? <>, {country.toUpperCase()}</> : null}
@@ -47,13 +49,24 @@ const Exchange = ({
       </div>
 
       <div className={styles.linksContainer}>
-        <a href={url} target="_blank" className={styles.link} rel="noreferrer">
+        <a
+          href={url}
+          target="_blank"
+          className={styles.link}
+          rel="noreferrer"
+          data-cy="exchange-external-link"
+        >
           Exchange&nbsp;&nbsp;
           <span>
             <FaExternalLinkAlt />
           </span>
         </a>
-        <Link to={`/exchanges/${id}`} state="hello" className={styles.link}>
+        <Link
+          to={`/exchanges/${id}`}
+          state="hello"
+          className={styles.link}
+          data-cy="exchange-internal-link"
+        >
           More Details
         </Link>
       </div>
