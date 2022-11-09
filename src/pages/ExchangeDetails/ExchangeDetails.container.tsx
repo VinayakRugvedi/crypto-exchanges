@@ -8,19 +8,19 @@ export interface ExchangeType {
   name: string;
   country: string;
   url: string;
-  description?: string;
+  description: string;
   image: string;
   trust_score_rank: number;
   trust_score: number;
   year_established: number;
-  facebook_url?: string;
-  slack_url?: string;
-  telegram_url?: string;
-  twitter_handle?: string;
+  facebook_url: string;
+  slack_url: string;
+  telegram_url: string;
+  twitter_handle: string;
 }
 
 const ExchangeDetailsContainer = (): JSX.Element => {
-  const [exchange, setExchange] = useState<ExchangeType | object>({});
+  const [exchange, setExchange] = useState<ExchangeType>({} as ExchangeType);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -40,7 +40,6 @@ const ExchangeDetailsContainer = (): JSX.Element => {
         return response.json();
       })
       .then((result) => {
-        console.log(result, "RESULT");
         setExchange(result);
       })
       .catch(() => {
