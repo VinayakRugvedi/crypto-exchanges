@@ -1,0 +1,20 @@
+.backLink {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--colors-neutral-80);
+  transition: color 0.5s;
+}
+
+.backIcon {
+  font-size: 2rem;
+  transform: translateY(10%);
+}
+
+.backLink:hover {
+  cursor: pointer;
+  color: var(--colors-primary);
+}
