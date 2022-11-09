@@ -44,8 +44,14 @@ const Exchange = ({
       </div>
 
       <div className={styles.trustContainer}>
-        <span>Rank: {trustRank}</span>
-        <span>Score: {trustScore} / 10</span>
+        <div className={styles.trustBlock}>
+          <p className={styles.trustValue}>{trustRank}</p>
+          <h6 className={styles.trustTitle}>Trust Rank</h6>
+        </div>
+        <div className={styles.trustBlock}>
+          <p className={styles.trustValue}>{trustScore} / 10</p>
+          <h6 className={styles.trustTitle}>Trust Score</h6>
+        </div>
       </div>
 
       <div className={styles.linksContainer}>
