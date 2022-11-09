@@ -4,4 +4,12 @@ const SizeTypes = {
   Large: "large",
 };
 
-export { SizeTypes };
+const SocialMediaTypes = {
+  Facebook: "facebook",
+  Twitter: "twitter",
+  Reddit: "reddit",
+  Telegram: "telegram",
+  Slack: "slack",
+};
+
+export { SizeTypes, SocialMediaTypes };
