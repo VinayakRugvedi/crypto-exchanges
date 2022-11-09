@@ -18,6 +18,23 @@
   font-size: 1rem;
   font-weight: 400;
   color: var(--colors-neutral-50);
-  max-width: 50%;
   margin-top: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+  .descriptionContent {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .descriptionContent {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .descriptionContent {
+    max-width: 40%;
+  }
 }
