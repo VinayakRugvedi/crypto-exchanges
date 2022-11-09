@@ -1,0 +1,29 @@
+.detailsContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.avatarContainer {
+  margin-right: 1rem;
+}
+
+.name {
+  margin: 0rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--colors-primary-80);
+}
+
+.originDetailsContainer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--colors-neutral-50);
+}
